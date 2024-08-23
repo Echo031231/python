@@ -16,7 +16,4 @@
 1. 克隆仓库
 
 ```bash
-git clone https://github.com/Echo031231/python.git
-
-
-
+git clone https://github.com/Echo031231/python.git  
