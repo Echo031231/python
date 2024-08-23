@@ -1,0 +1,60 @@
+conda -h(显示常用指令)
+
+conda 常用指令表格：
+
+    ### **管理环境**
+
+        | 指令                                             | 描述                                               |
+        |--------------------------------------------------|----------------------------------------------------|
+        | `conda create --name env_name`                  | 创建一个新的环境                                   |
+        | `conda create --name env_name python=3.11.7`       | 创建一个新的环境并指定 Python 版本                |
+        | `conda activate env_name`                        | 激活指定的环境                                     |
+        | `conda deactivate`                              | 退出当前环境                                       |
+        | `conda env list`                                | 列出所有已创建的环境                              |
+        | `conda env remove --name env_name`               | 删除指定的环境                                    |
+        | `conda env export > environment.yml`             | 导出当前环境的配置到 `environment.yml` 文件      |
+        | `conda env create -f environment.yml`            | 从 `environment.yml` 文件创建环境                |
+
+    ### **管理包**
+
+        | 指令                                             | 描述                                               |
+        |--------------------------------------------------|----------------------------------------------------|
+        | `conda install package_name`                    | 在当前环境中安装指定的包                          |
+        | `conda install package_name=version`            | 安装指定版本的包                                  |
+        | `conda install -c channel_name package_name`   | 从指定的频道安装包                                |
+        | `conda remove package_name`                     | 从当前环境中卸载指定的包                          |
+        | `conda list`                                    | 列出当前环境中安装的所有包                        |
+        | `conda update package_name`                     | 更新当前环境中指定的包                            |
+        | `conda update --all`                            | 更新当前环境中所有包                             |
+        | `conda search package_name`                     | 搜索可用的包                                      |
+        | `conda clean --all`                             | 清理未使用的包和缓存                              |
+        | `conda config --show`                           | 显示 conda 配置设置                               |
+        | `conda config --add channels channel_name`      | 添加频道到 conda 配置                              |
+        | `conda config --remove channels channel_name`   | 从 conda 配置中删除频道                            |
+        | `conda config --set auto_activate_base false`   | 禁用基础环境的自动激活                             |
+
+        这样可以更清晰地分开管理环境和包的指令。
+
+
+pip 与 conda的区别:
+
+    `conda` 和 `pip` 都是 Python 包管理工具，但它们有一些关键区别：
+
+    | 特性                  | `conda`                                             | `pip`                                               |
+    |-----------------------|----------------------------------------------------|----------------------------------------------------|
+    | **管理范围**            | 管理包和环境                                         | 主要管理 Python 包                                |
+    | **环境管理**            | 内置环境管理功能，可以创建、激活、删除环境                | 不支持环境管理，需配合 `venv` 或 `virtualenv` 使用    |
+    | **包来源**             | 支持 Anaconda 仓库和其他指定的仓库                       | 从 Python 包索引（PyPI）安装包                       |
+    | **包管理**             | 可以管理 Python 和非 Python 包                            | 仅管理 Python 包                                   |
+    | **依赖解析**           | 支持更复杂的依赖解析和解决方案                           | 依赖解析较简单，可能会导致冲突                        |
+    | **安装方式**           | 支持通过 `conda install` 从多个频道安装包                  | 使用 `pip install` 从 PyPI 安装包                    |
+    | **包版本**             | 可以指定具体版本，也可以使用最优解决方案                    | 可以指定版本，但在版本冲突时需要手动解决             |
+    | **配置和设置**         | 可以使用 `conda config` 配置设置                           | 配置通过 `pip config` 或环境变量实现                 |
+    | **文件导入导出**        | 支持导出和创建环境配置文件（`environment.yml`）             | 支持导出安装包列表（`requirements.txt`）             |
+    | **包缓存**             | 支持清理未使用的包和缓存                                | 支持清理缓存（`pip cache`）                          |
+
+    **总结**：
+    - `conda` 是一个功能更全面的工具，不仅管理 Python 包，还能处理其他语言的包，并且具有内置的环境管理功能。
+    - `pip` 专注于 Python 包的安装和管理，通常与虚拟环境工具结合使用。
+
+

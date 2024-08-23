@@ -1,0 +1,37 @@
+Python 3.x 中的保留字（也称为关键字）是Python语言中已经被赋予特定含义的词汇，不能作为变量名、函数名或任何其他标识符使用。以下是Python 3.x中的35个保留字：
+
+1. `False`
+2. `None`
+3. `True`
+4. `and`
+5. `as`
+6. `assert`
+7. `async`（Python 3.5引入）
+8. `await`（Python 3.5引入）
+9. `break`
+10. `class`
+11. `continue`
+12. `def`
+13. `del`
+14. `elif`
+15. `else`
+16. `except`
+17. `finally`
+18. `for`
+19. `from`
+20. `global`
+21. `if`
+22. `import`
+23. `in`
+24. `is`
+25. `lambda`
+26. `nonlocal`
+27. `not`
+28. `or`
+29. `pass`
+30. `raise`
+31. `return`
+32. `try`
+33. `while`
+34. `with`
+35. `yield`

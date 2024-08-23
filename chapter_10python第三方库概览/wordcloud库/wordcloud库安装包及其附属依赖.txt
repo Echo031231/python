@@ -1,0 +1,22 @@
+# wordcloud库
+    contourpy==1.2.1
+    cycler==0.12.1
+    fonttools==4.53.1
+    kiwisolver==1.4.5
+    matplotlib==3.9.2
+    numpy==2.0.1
+    pillow==10.4.0
+    pyparsing==3.1.2
+    wordcloud==1.9.3
+
+'''
+Installing collected packages: 
+    pyparsing, pillow, numpy, kiwisolver, fonttools, 
+    cycler, contourpy, matplotlib, wordcloud
+Successfully installed
+    contourpy-1.2.1 cycler-0.12.1 fonttools-4.53.1 kiwisolver-1.4.5 
+    matplotlib-3.9.2 numpy-2.0.1 pillow-10.4.0 pyparsing-3.1.2 wordcloud-1.9.3
+'''
+
+
+

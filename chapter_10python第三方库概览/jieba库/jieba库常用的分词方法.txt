@@ -1,0 +1,31 @@
+以下是更全面的 `jieba` 库常用分词函数及功能的总结表格：
+
+| 函数名                       | 描述                                                | 返回类型           | 示例代码                                           |
+|------------------------------|---------------------------------------------------|------------------|---------------------------------------------------|
+| `jieba.cut`                  | 精确模式分词，适合准确切分                         | 生成器对象        | `jieba.cut("我爱自然语言处理")`                   |
+| `jieba.lcut`                 | 精确模式分词，返回列表形式                         | 列表              | `jieba.lcut("我爱自然语言处理")`                  |
+| `jieba.cut_for_search`        | 搜索引擎模式分词，适合对长词进行切分                 | 生成器对象        | `jieba.cut_for_search("我爱自然语言处理")`        |
+| `jieba.lcut_for_search`       | 搜索引擎模式分词，返回列表形式                     | 列表              | `jieba.lcut_for_search("我爱自然语言处理")`       |
+| `jieba.cut_all`               | 全模式分词，找出所有可能词语                       | 生成器对象        | `jieba.cut("我爱自然语言处理", cut_all=True)`    |
+| `jieba.lcut_all`              | 全模式分词，返回列表形式                           | 列表              | `jieba.lcut("我爱自然语言处理", cut_all=True)`   |
+| `jieba.add_word`              | 动态添加词语到词典，提升分词准确性                  | 无返回值          | `jieba.add_word("新词")`                           |
+| `jieba.del_word`              | 从词典中删除词语，影响分词结果                      | 无返回值          | `jieba.del_word("删除词")`                         |
+| `jieba.suggest_freq`          | 调整词语的词频，影响分词结果                        | 无返回值          | `jieba.suggest_freq(('词语', '词性'), True)`      |
+| `jieba.load_userdict`         | 加载用户自定义词典，提升分词效果                    | 无返回值          | `jieba.load_userdict("userdict.txt")`             |
+| `jieba.cut`（分词模式参数） | 可以设置 `cut_all` 参数为 `True` 进行全模式分词     | 生成器对象        | `jieba.cut("我爱自然语言处理", cut_all=True)`    |
+| `jieba.lcut`（分词模式参数） | 可以设置 `cut_all` 参数为 `True` 进行全模式分词     | 列表              | `jieba.lcut("我爱自然语言处理", cut_all=True)`   |
+
+### 说明：
+
+- **精确模式 (`cut`, `lcut`)**：旨在提供最准确的分词结果。
+- **全模式 (`cut_all`)**：会把句子中所有可能的词语都找出来，但速度较快。
+- **搜索引擎模式 (`cut_for_search`, `lcut_for_search`)**：适合搜索引擎的倒排索引构建，能更好地处理长词。
+- **动态添加词 (`add_word`, `del_word`)**：用于词典的动态修改，能改进分词效果。
+- **调整词频 (`suggest_freq`)**：用于调整词语在词典中的频率，以优化分词结果。
+- **加载用户词典 (`load_userdict`)**：加载自定义词典以增加特定领域的词汇。
+
+这些函数和功能可以帮助你根据具体需求进行更灵活的文本分词和处理。
+
+
+
+

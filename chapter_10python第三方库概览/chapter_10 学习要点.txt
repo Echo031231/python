@@ -1,0 +1,9 @@
+1. 利用pip工具的第三方库安装方法
+2. 第三方库的使用:
+
+2.1 jieba库
+2.2 pyInstaller库
+2.3 wordcloud库
+
+
+

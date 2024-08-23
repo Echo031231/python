@@ -1,0 +1,40 @@
+更广泛的python计算生态,只要求了解第三方库名称;
+1.网络爬虫:
+    requires
+    scrapy
+2.数据分析:
+    numpy
+    scipy
+    pandas
+3.文本处理:
+    openpyxl
+    python-docx
+    beautifulsoup4
+4.用户图形界面:
+    PyQt5
+    wxPython
+    PyGTK
+5.机器学习:
+    scikit_learn
+    TensorFlow
+    Theano
+6.Web开发:
+    Django
+    Pyramid
+    Flask
+7.游戏开发:
+    Pygame
+    Panda3D
+    cocos2d
+8.数据可视化:
+    matplotlib
+    TVTK
+    mayavi
+9.更多第三方库:
+    PIL
+    SymPy
+    NLTK
+    WeoBot
+    MYQR
+
+

@@ -1,0 +1,50 @@
+1. WordCloud对象创建的常用参数:
+
+    当然，下面是 `WordCloud` 对象创建时的所有常用参数的全面表格：
+
+    | 参数名              | 描述                                                       | 默认值       |
+    |---------------------|------------------------------------------------------------|--------------|
+    | `width`             | 图像的宽度（像素）                                           | 400          |
+    | `height`            | 图像的高度（像素）                                           | 200          |
+    | `background_color`  | 背景颜色                                                     | `'black'`    |
+    | `max_words`         | 词云中显示的最大单词数                                       | 200          |
+    | `colormap`          | 词云的颜色映射方案，使用 Matplotlib 的颜色映射名称            | `None`       |
+    | `font_path`         | 自定义字体文件的路径                                       | `None`       |
+    | `min_font_size`     | 显示的最小字体大小                                         | 4            |
+    | `max_font_size`     | 显示的最大字体大小                                         | 110          |
+    | `contour_color`     | 词云轮廓的颜色                                               | `None`       |
+    | `contour_width`     | 轮廓的宽度                                                   | 0            |
+    | `stopwords`         | 停用词集合，用于过滤不需要显示的词                          | 默认停用词集 |
+    | `regexp`            | 用于提取词的正则表达式                                     | `None`       |
+    | `prefer_horizontal` | 词云中单词的水平优先比例                                   | 0.9          |
+    | `mask`              | 用于生成词云形状的掩模图像（如心形、星形等）                  | `None`       |
+    | `contour_color`     | 轮廓的颜色                                                   | `None`       |
+    | `contour_width`     | 轮廓的宽度                                                   | 0            |
+    | `collocations`      | 是否显示搭配词（如“data science”）                           | `True`       |
+    | `include_numbers`   | 是否包含数字                                                 | `False`      |
+    | `normalize_plurals` | 是否标准化复数词形式                                        | `True`       |
+
+    这些参数可以用来细致地调整词云图的外观和内容。根据你的需求，可以自由组合这些参数来生成符合期望的词云图。
+
+
+
+2. WordCloud类的常用方法:
+
+    `WordCloud` 类的常用方法如下：
+
+    | 方法名              | 描述                                                   |
+    |---------------------|--------------------------------------------------------|
+    | `generate(text)`    | 从文本生成词云。`text` 是输入的文本数据。              |
+    | `generate_from_frequencies(frequencies)` | 从词频字典生成词云。`frequencies` 是一个词频字典。       |
+    | `generate_from_text(text)` | 从文本生成词云，类似于 `generate`，但允许提供更多处理。 |
+    | `to_file(filename)` | 将生成的词云保存为图像文件。`filename` 是保存文件的路径。|
+    | `to_image()`        | 将词云转换为图像对象（PIL Image）。                     |
+    | `to_array()`        | 将词云转换为 NumPy 数组（图像的像素值）。               |
+    | `recolor(color_func)` | 使用自定义颜色函数重新着色词云。`color_func` 是颜色函数。 |
+
+    这些方法可以帮助你生成、保存和转换词云图。
+
+
+
+
+

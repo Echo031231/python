@@ -1,0 +1,4 @@
+标准库的使用:
+1. turtle库
+2. random库
+3. time库

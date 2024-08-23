@@ -1,0 +1,45 @@
+pip -h       #列出pip常用子命令
+
+常用指令:
+1. 安装(install)
+2. 下载(download)
+3. 卸载(uninstall)
+4. 列表(list)
+5. 查看(show)
+6. 查找(search)
+
+
+
+# 示例:(在终端中输入)
+pip install pygame
+pip uninstall pygame
+pip list (列出当前环境中已经安装的第三方库)
+pip show sip (列出sip库的详细信息)
+pip download pyqt5 (下载第三方库的安装包,但不安装)
+pip search installer (联网搜索库名或摘要中的关键字)
+
+
+
+Usage:   
+  pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  inspect                     Inspect the python environment.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  cache                       Inspect and manage pip's wheel cache.
+  index                       Inspect information available from package indexes.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  debug                       Show information useful for debugging.
+  help                        Show help for commands.
+
+  
